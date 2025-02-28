@@ -949,6 +949,10 @@ void ReportPage::on_FromDateButton_clicked()
     connect(c, &CalendarPage::changeDate, this, &ReportPage::setFromDate);
 
     c->show();
+
+    setTable();
+    setBottomTable();
+    setTableSizes();
 }
 
 void ReportPage::on_ToDateButton_clicked()
@@ -958,6 +962,10 @@ void ReportPage::on_ToDateButton_clicked()
     connect(c, &CalendarPage::changeDate, this, &ReportPage::setToDate);
 
     c->show();
+
+    setTable();
+    setBottomTable();
+    setTableSizes();
 }
 
 void ReportPage::on_ToPDFButton_clicked()
