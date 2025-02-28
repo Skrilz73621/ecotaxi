@@ -1010,6 +1010,9 @@ void GeneralReport::setFromDate(QDate date)
     setTable();
     setBottomTable();
     setTableSizes();
+
+    
+
 }
 
 void GeneralReport::setToDate(QDate date)
@@ -1020,6 +1023,8 @@ void GeneralReport::setToDate(QDate date)
     setTable();
     setBottomTable();
     setTableSizes();
+
+
 }
 
 void GeneralReport::on_FilterButton_clicked()

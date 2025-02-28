@@ -950,9 +950,13 @@ void ReportPage::on_FromDateButton_clicked()
 
     c->show();
 
-    setTable();
-    setBottomTable();
-    setTableSizes();
+    
+    if (this->id > 0) {
+        setTable();
+        setBottomTable();
+        setTableSizes();
+    }
+
 }
 
 void ReportPage::on_ToDateButton_clicked()
@@ -963,9 +967,12 @@ void ReportPage::on_ToDateButton_clicked()
 
     c->show();
 
-    setTable();
-    setBottomTable();
-    setTableSizes();
+    if (this->id > 0) {
+        setTable();
+        setBottomTable();
+        setTableSizes();
+    }
+
 }
 
 void ReportPage::on_ToPDFButton_clicked()
